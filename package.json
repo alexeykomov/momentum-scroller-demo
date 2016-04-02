@@ -1,0 +1,23 @@
+{
+  "name": "momentum-scroller-demo",
+  "version": "0.0.1",
+  "description": "demo site for momentum scroller project",
+  "main": "",
+  "directories": {
+  },
+  "private": true,
+  "scripts": {
+    "build": "jade index.jade & lessc --clean-css less/all.less css/all.css"
+  },
+  "keywords": [
+    "demo", "site"
+  ],
+  "author": [
+    "alexeykcontact@gmail.com (Alex K)"
+  ],
+  "license": "commercial",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
