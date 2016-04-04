@@ -464,23 +464,23 @@ $goog$Disposable$$.prototype.$disposeInternal$ = function $$goog$Disposable$$$$$
 };
 function $goog$events$Event$$($type$$100$$, $opt_target$$1$$) {
   this.type = $type$$100$$;
-  this.$b$ = this.$c$ = $opt_target$$1$$;
+  this.$b$ = this.$f$ = $opt_target$$1$$;
   this.$g$ = !1;
 }
-$goog$events$Event$$.prototype.$f$ = function $$goog$events$Event$$$$$f$$() {
+$goog$events$Event$$.prototype.$c$ = function $$goog$events$Event$$$$$c$$() {
   this.$g$ = !0;
 };
 $goog$events$Event$$.prototype.preventDefault = function $$goog$events$Event$$$$preventDefault$() {
 };
 function $goog$events$BrowserEvent$$($opt_e$$, $opt_currentTarget$$) {
   $goog$events$Event$$.call(this, $opt_e$$ ? $opt_e$$.type : "");
-  this.$b$ = this.$c$ = null;
+  this.$b$ = this.$f$ = null;
   this.clientY = this.clientX = 0;
   this.$a$ = this.state = null;
   if ($opt_e$$) {
     this.type = $opt_e$$.type;
     var $relevantTouch$$inline_74$$ = $opt_e$$.changedTouches ? $opt_e$$.changedTouches[0] : null;
-    this.$c$ = $opt_e$$.target || $opt_e$$.srcElement;
+    this.$f$ = $opt_e$$.target || $opt_e$$.srcElement;
     this.$b$ = $opt_currentTarget$$;
     var $relatedTarget$$inline_75$$ = $opt_e$$.relatedTarget;
     if ($relatedTarget$$inline_75$$ && $goog$userAgent$GECKO$$) {
@@ -496,8 +496,8 @@ function $goog$events$BrowserEvent$$($opt_e$$, $opt_currentTarget$$) {
   }
 }
 $goog$inherits$$($goog$events$BrowserEvent$$, $goog$events$Event$$);
-$goog$events$BrowserEvent$$.prototype.$f$ = function $$goog$events$BrowserEvent$$$$$f$$() {
-  $goog$events$BrowserEvent$$.$superClass_$.$f$.call(this);
+$goog$events$BrowserEvent$$.prototype.$c$ = function $$goog$events$BrowserEvent$$$$$c$$() {
+  $goog$events$BrowserEvent$$.$superClass_$.$c$.call(this);
   this.$a$.stopPropagation ? this.$a$.stopPropagation() : this.$a$.cancelBubble = !0;
 };
 $goog$events$BrowserEvent$$.prototype.preventDefault = function $$goog$events$BrowserEvent$$$$preventDefault$() {
@@ -808,7 +808,7 @@ $JSCompiler_prototypeAlias$$.$onTouchStart$ = function $$JSCompiler_prototypeAli
     this.$stopPropagationOnTouchEnd_$ = !1;
   }
   this.$isDecelerating_$ = !1;
-  this.$stopPropagationOnTouchEnd_$ && ($aEvent$$2$$.$f$(), $aEvent$$2$$.preventDefault());
+  this.$stopPropagationOnTouchEnd_$ && (console.log("aEvent touch start: ", $aEvent$$2$$), $aEvent$$2$$.$c$(), $aEvent$$2$$.preventDefault());
   this.$startTouchY$ = $aEvent$$2$$.$a$.touches[0].clientY;
   this.$j$ = $aEvent$$2$$.$a$.touches[0].clientX;
   this.$contentStartOffsetY$ = this.$contentOffsetY$;
@@ -855,11 +855,12 @@ $JSCompiler_prototypeAlias$$.$onTouchEnd$ = function $$JSCompiler_prototypeAlias
       }
     }
   }
-  this.$stopPropagationOnTouchEnd_$ || 5 <= Math.abs(this.$currentPoint_$ - this.$startTouchY$) ? ($aEvent$$4_evt$$inline_172_length$$inline_229$$.stopPropagation(), $aEvent$$4_evt$$inline_172_length$$inline_229$$.preventDefault(), this.$stopPropagationOnTouchEnd_$ = !1) : ($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = this.$j$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ = 
-  this.$startTouchY$, $aEvent$$4_evt$$inline_172_length$$inline_229$$ = document.createEvent("MouseEvents"), $aEvent$$4_evt$$inline_172_length$$inline_229$$.initMouseEvent("click", !0, !1, window, 0, 0, 0, $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$, !1, !1, !1, !1, 0, null), $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = 
-  document.elementFromPoint($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$), $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.dispatchEvent($aEvent$$4_evt$$inline_172_length$$inline_229$$), $rflect$ui$MomentumScroller$needsFocus$$($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$) && 
-  ($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.setSelectionRange && 0 !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type.indexOf("date") && "time" !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type && "month" !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type ? 
-  ($aEvent$$4_evt$$inline_172_length$$inline_229$$ = $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.value.length, $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.setSelectionRange($aEvent$$4_evt$$inline_172_length$$inline_229$$, $aEvent$$4_evt$$inline_172_length$$inline_229$$)) : $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.focus()));
+  this.$stopPropagationOnTouchEnd_$ || 5 <= Math.abs(this.$currentPoint_$ - this.$startTouchY$) ? (console.log("aEvent touch end: ", $aEvent$$4_evt$$inline_172_length$$inline_229$$), $aEvent$$4_evt$$inline_172_length$$inline_229$$.$c$ ? $aEvent$$4_evt$$inline_172_length$$inline_229$$.$c$() : $aEvent$$4_evt$$inline_172_length$$inline_229$$.$a$.stopPropagation(), $aEvent$$4_evt$$inline_172_length$$inline_229$$.preventDefault(), this.$stopPropagationOnTouchEnd_$ = !1) : ($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = 
+  this.$j$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ = this.$startTouchY$, $aEvent$$4_evt$$inline_172_length$$inline_229$$ = document.createEvent("MouseEvents"), $aEvent$$4_evt$$inline_172_length$$inline_229$$.initMouseEvent("click", !0, !1, window, 0, 0, 0, $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$, 
+  !1, !1, !1, !1, 0, null), $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = document.elementFromPoint($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$), $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.dispatchEvent($aEvent$$4_evt$$inline_172_length$$inline_229$$), 
+  $rflect$ui$MomentumScroller$needsFocus$$($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$) && ($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.setSelectionRange && 0 !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type.indexOf("date") && "time" !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type && 
+  "month" !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type ? ($aEvent$$4_evt$$inline_172_length$$inline_229$$ = $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.value.length, $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.setSelectionRange($aEvent$$4_evt$$inline_172_length$$inline_229$$, 
+  $aEvent$$4_evt$$inline_172_length$$inline_229$$)) : $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.focus()));
   this.$j$ = this.$startTouchY$ = this.$previousPoint_$ = this.$previousMoment_$ = this.$currentPoint_$ = this.$currentMoment_$ = 0;
   this.$isDragging_$ = !1;
 };
@@ -890,7 +891,7 @@ function $rflect$ui$MomentumScroller$needsFocus$$($aElement$$8$$) {
   }
 }
 $JSCompiler_prototypeAlias$$.$onTransitionEnd$ = function $$JSCompiler_prototypeAlias$$$$onTransitionEnd$$($aEvent$$5_newY$$inline_178_velocity$$inline_176$$) {
-  if ($aEvent$$5_newY$$inline_178_velocity$$inline_176$$.target == this.$a$) {
+  if ($aEvent$$5_newY$$inline_178_velocity$$inline_176$$.$f$ == this.$a$) {
     switch(this.$queuedTransitionStage_$) {
       case -1:
         $rflect$browser$css$setTransition$$(this.$a$, "");

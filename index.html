@@ -1,1 +1,88 @@
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="initial-scale=1.0, width=device-width"><meta name="theme-color" content="#f6f6f6"><meta property="og:title" content="Momentum scroller"><meta property="og:type" content="website"><meta property="og:url" content="http://momentum-scroller.github.io/"><meta property="og:image" content="http://momentum-scroller.github.io/img/picture-large.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@alexey_komov"><meta name="twitter:creator" content="@alexey_komov"><meta name="twitter:title" content="Momentum scroller page"><meta name="twitter:description" content="Momentum scroller"><meta name="twitter:image" content="http://momentum-scroller.github.io/img/picture-large.jpg"><title>Alexey Komov</title><link rel="stylesheet" href="css/all.css"></head><body><header><h3 class="name-title">Momentum scroller demo page</h3></header><main></main><script src="js/momentum-scroller.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="theme-color" content="#f6f6f6">
+    <meta property="og:title" content="Momentum scroller">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://momentum-scroller.github.io/">
+    <meta property="og:image" content="http://momentum-scroller.github.io/img/picture-large.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@alexey_komov">
+    <meta name="twitter:creator" content="@alexey_komov">
+    <meta name="twitter:title" content="Momentum scroller page">
+    <meta name="twitter:description" content="Momentum scroller">
+    <meta name="twitter:image" content="http://momentum-scroller.github.io/img/picture-large.jpg">
+    <title>Momentum scroller demo page</title>
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body>
+    <header>
+      <h3 class="name-title">Momentum scroller demo page</h3>
+    </header>
+    <main>
+      <div class="scrollable">
+        <div class="content">
+          <ul>
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+            <li>32</li>
+            <li>33</li>
+            <li>34</li>
+            <li>35</li>
+            <li>36</li>
+            <li>37</li>
+            <li>38</li>
+            <li>39</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="js/momentum-scroller.js"></script>
+    <script>
+      var momentumScroller = new MomentumScroller();
+      window.addEventListener('load', function() {
+        momentumScroller.add(document.querySelector('.scrollable'));
+      }, false);
+      window.addEventListener('unload', function() {
+        momentumScroller.dispose();
+      }, false);
+      window.addEventListener('resize', function() {
+        console.log('Resize event fired.');
+        momentumScroller.reset(document.querySelector('.scrollable'));
+      }, false);
+    </script>
+  </body>
+</html>

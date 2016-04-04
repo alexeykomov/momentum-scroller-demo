@@ -7,7 +7,7 @@
   },
   "private": true,
   "scripts": {
-    "build": "jade index.jade & lessc --clean-css less/all.less css/all.css"
+    "build": "jade -P index.jade & lessc --clean-css less/all.less css/all.css"
   },
   "keywords": [
     "demo", "site"
