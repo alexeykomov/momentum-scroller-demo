@@ -4,4 +4,10 @@ window.addEventListener('load', function() {
 }, false);
 window.addEventListener('unload', function() {
   momentumScroller.dispose();
+}, false);
+window.addEventListener('resize', function() {
+  console.log('Resize event fired.');
+  //setTimeout(function() {
+    momentumScroller.reset(document.querySelector('.scrollable'));
+  //}, 1000);
 }, false);</script></body></html>

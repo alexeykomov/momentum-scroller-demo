@@ -42,4 +42,8 @@ html(lang='en')
       window.addEventListener('unload', function() {
         momentumScroller.dispose();
       }, false);
+      window.addEventListener('resize', function() {
+        console.log('Resize event fired.');
+        momentumScroller.reset(document.querySelector('.scrollable'));
+      }, false);
 
