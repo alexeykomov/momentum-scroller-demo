@@ -19,12 +19,27 @@ html(lang='en')
     meta(name='twitter:image', content='http://momentum-scroller.github.io/img/picture-large.jpg')
 
     title.
-      Alexey Komov
+      Momentum scroller demo page
     link(rel='stylesheet', href='css/all.css')
   body
     header
       h3.name-title.
         Momentum scroller demo page
     main
-    script(src='js/momentum-scroller.js')
+      div.scrollable
+        div.content
+          - var n = 0
+          ul
+            while n < 40
+              li= n++
+
+    script(src='js/momentum-scroller.js').
+    script.
+      var momentumScroller = new MomentumScroller();
+      window.addEventListener('load', function() {
+        momentumScroller.add(document.querySelector('.scrollable'));
+      }, false);
+      window.addEventListener('unload', function() {
+        momentumScroller.dispose();
+      }, false);
 
