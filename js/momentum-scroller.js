@@ -364,28 +364,28 @@ function $goog$reflect$sinkValue$$($x$$70$$) {
 $goog$reflect$sinkValue$$[" "] = function $$goog$reflect$sinkValue$$$__0$() {
 };
 function $goog$style$evaluateWithTemporaryDisplay_$$($element$$55_retVal$$1$$) {
-  var $fn$$5$$ = $goog$style$getSizeWithDisplay_$$, $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$;
+  var $fn$$5$$ = $goog$style$getSizeWithDisplay_$$, $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$;
   a: {
     $goog$asserts$assert$$($element$$55_retVal$$1$$, "Node cannot be null or undefined.");
-    $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$ = 9 == $element$$55_retVal$$1$$.nodeType ? $element$$55_retVal$$1$$ : $element$$55_retVal$$1$$.ownerDocument || $element$$55_retVal$$1$$.document;
-    if ($JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.defaultView && $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.defaultView.getComputedStyle && ($JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$ = $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.defaultView.getComputedStyle($element$$55_retVal$$1$$, null))) {
-      $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$ = $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.display || $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.getPropertyValue("display") || "";
+    $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$ = 9 == $element$$55_retVal$$1$$.nodeType ? $element$$55_retVal$$1$$ : $element$$55_retVal$$1$$.ownerDocument || $element$$55_retVal$$1$$.document;
+    if ($JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.defaultView && $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.defaultView.getComputedStyle && ($JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$ = $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.defaultView.getComputedStyle($element$$55_retVal$$1$$, null))) {
+      $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$ = $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.display || $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.getPropertyValue("display") || "";
       break a;
     }
-    $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$ = "";
+    $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$ = "";
   }
-  if ("none" != ($JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$ || ($element$$55_retVal$$1$$.currentStyle ? $element$$55_retVal$$1$$.currentStyle.display : null) || $element$$55_retVal$$1$$.style && $element$$55_retVal$$1$$.style.display)) {
+  if ("none" != ($JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$ || ($element$$55_retVal$$1$$.currentStyle ? $element$$55_retVal$$1$$.currentStyle.display : null) || $element$$55_retVal$$1$$.style && $element$$55_retVal$$1$$.style.display)) {
     return $fn$$5$$($element$$55_retVal$$1$$);
   }
-  $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$ = $element$$55_retVal$$1$$.style;
-  var $originalDisplay$$ = $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.display, $originalVisibility$$ = $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.visibility, $originalPosition$$ = $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.position;
-  $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.visibility = "hidden";
-  $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.position = "absolute";
-  $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.display = "inline";
+  $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$ = $element$$55_retVal$$1$$.style;
+  var $originalDisplay$$ = $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.display, $originalVisibility$$ = $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.visibility, $originalPosition$$ = $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.position;
+  $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.visibility = "hidden";
+  $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.position = "absolute";
+  $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.display = "inline";
   $element$$55_retVal$$1$$ = $fn$$5$$($element$$55_retVal$$1$$);
-  $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.display = $originalDisplay$$;
-  $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.position = $originalPosition$$;
-  $JSCompiler_inline_result$$186_doc$$inline_197_style$$13_styles$$inline_198$$.visibility = $originalVisibility$$;
+  $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.display = $originalDisplay$$;
+  $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.position = $originalPosition$$;
+  $JSCompiler_inline_result$$185_doc$$inline_196_style$$13_styles$$inline_197$$.visibility = $originalVisibility$$;
   return $element$$55_retVal$$1$$;
 }
 function $goog$style$getSizeWithDisplay_$$($doc$$inline_62_element$$56$$) {
@@ -486,7 +486,7 @@ function $goog$events$BrowserEvent$$($opt_e$$, $opt_currentTarget$$) {
     if ($relatedTarget$$inline_75$$ && $goog$userAgent$GECKO$$) {
       try {
         $goog$reflect$sinkValue$$($relatedTarget$$inline_75$$.nodeName);
-      } catch ($e$$inline_204$$) {
+      } catch ($e$$inline_203$$) {
       }
     }
     null === $relevantTouch$$inline_74$$ ? (this.clientX = void 0 !== $opt_e$$.clientX ? $opt_e$$.clientX : $opt_e$$.pageX, this.clientY = void 0 !== $opt_e$$.clientY ? $opt_e$$.clientY : $opt_e$$.pageY) : (this.clientX = void 0 !== $relevantTouch$$inline_74$$.clientX ? $relevantTouch$$inline_74$$.clientX : $relevantTouch$$inline_74$$.pageX, this.clientY = void 0 !== $relevantTouch$$inline_74$$.clientY ? $relevantTouch$$inline_74$$.clientY : $relevantTouch$$inline_74$$.pageY);
@@ -517,43 +517,43 @@ $goog$events$BrowserEvent$$.prototype.preventDefault = function $$goog$events$Br
   }
 };
 var $goog$events$LISTENER_MAP_PROP_$$ = "closure_lm_" + (1E6 * Math.random() | 0), $goog$events$onStringMap_$$ = {}, $goog$events$listenerCountEstimate_$$ = 0;
-function $goog$events$listen$$($JSCompiler_temp$$8_src$$15$$, $type$$102$$, $capture$$inline_83_listener$$48$$, $listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$, $opt_handler$$1_proxy$$inline_86$$) {
+function $goog$events$listen$$($JSCompiler_temp$$8_src$$15$$, $type$$102$$, $capture$$inline_83_listener$$48$$, $listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$, $opt_handler$$1_proxy$$inline_86$$) {
   if ("array" == $goog$typeOf$$($type$$102$$)) {
     for (var $i$$79_listener$$inline_79$$ = 0;$i$$79_listener$$inline_79$$ < $type$$102$$.length;$i$$79_listener$$inline_79$$++) {
-      $goog$events$listen$$($JSCompiler_temp$$8_src$$15$$, $type$$102$$[$i$$79_listener$$inline_79$$], $capture$$inline_83_listener$$48$$, $listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$, $opt_handler$$1_proxy$$inline_86$$);
+      $goog$events$listen$$($JSCompiler_temp$$8_src$$15$$, $type$$102$$[$i$$79_listener$$inline_79$$], $capture$$inline_83_listener$$48$$, $listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$, $opt_handler$$1_proxy$$inline_86$$);
     }
     return null;
   }
   $capture$$inline_83_listener$$48$$ = $goog$events$wrapListener$$($capture$$inline_83_listener$$48$$);
   if ($JSCompiler_temp$$8_src$$15$$ && $JSCompiler_temp$$8_src$$15$$[$goog$events$Listenable$IMPLEMENTED_BY_PROP$$]) {
-    $JSCompiler_temp$$8_src$$15$$ = $JSCompiler_temp$$8_src$$15$$.$b$($type$$102$$, $capture$$inline_83_listener$$48$$, $listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$, $opt_handler$$1_proxy$$inline_86$$);
+    $JSCompiler_temp$$8_src$$15$$ = $JSCompiler_temp$$8_src$$15$$.$b$($type$$102$$, $capture$$inline_83_listener$$48$$, $listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$, $opt_handler$$1_proxy$$inline_86$$);
   } else {
     $i$$79_listener$$inline_79$$ = $capture$$inline_83_listener$$48$$;
     if (!$type$$102$$) {
       throw Error("Invalid event type");
     }
-    $capture$$inline_83_listener$$48$$ = !!$listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$;
-    var $listenerArray$$inline_213_listenerMap$$inline_84$$ = $goog$events$getListenerMap_$$($JSCompiler_temp$$8_src$$15$$);
-    $listenerArray$$inline_213_listenerMap$$inline_84$$ || ($JSCompiler_temp$$8_src$$15$$[$goog$events$LISTENER_MAP_PROP_$$] = $listenerArray$$inline_213_listenerMap$$inline_84$$ = new $goog$events$ListenerMap$$($JSCompiler_temp$$8_src$$15$$));
-    var $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_206$$ = $listenerArray$$inline_213_listenerMap$$inline_84$$, $typeStr$$inline_212$$ = $type$$102$$.toString(), $listenerArray$$inline_213_listenerMap$$inline_84$$ = $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_206$$.$a$[$typeStr$$inline_212$$];
-    $listenerArray$$inline_213_listenerMap$$inline_84$$ || ($listenerArray$$inline_213_listenerMap$$inline_84$$ = $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_206$$.$a$[$typeStr$$inline_212$$] = [], $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_206$$.$b$++);
-    var $i$$inline_237_index$$inline_215$$;
+    $capture$$inline_83_listener$$48$$ = !!$listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$;
+    var $listenerArray$$inline_212_listenerMap$$inline_84$$ = $goog$events$getListenerMap_$$($JSCompiler_temp$$8_src$$15$$);
+    $listenerArray$$inline_212_listenerMap$$inline_84$$ || ($JSCompiler_temp$$8_src$$15$$[$goog$events$LISTENER_MAP_PROP_$$] = $listenerArray$$inline_212_listenerMap$$inline_84$$ = new $goog$events$ListenerMap$$($JSCompiler_temp$$8_src$$15$$));
+    var $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_205$$ = $listenerArray$$inline_212_listenerMap$$inline_84$$, $typeStr$$inline_211$$ = $type$$102$$.toString(), $listenerArray$$inline_212_listenerMap$$inline_84$$ = $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_205$$.$a$[$typeStr$$inline_211$$];
+    $listenerArray$$inline_212_listenerMap$$inline_84$$ || ($listenerArray$$inline_212_listenerMap$$inline_84$$ = $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_205$$.$a$[$typeStr$$inline_211$$] = [], $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_205$$.$b$++);
+    var $i$$inline_236_index$$inline_214$$;
     b: {
-      for ($i$$inline_237_index$$inline_215$$ = 0;$i$$inline_237_index$$inline_215$$ < $listenerArray$$inline_213_listenerMap$$inline_84$$.length;++$i$$inline_237_index$$inline_215$$) {
-        var $listenerObj$$inline_238$$ = $listenerArray$$inline_213_listenerMap$$inline_84$$[$i$$inline_237_index$$inline_215$$];
-        if (!$listenerObj$$inline_238$$.$removed$ && $listenerObj$$inline_238$$.listener == $i$$79_listener$$inline_79$$ && $listenerObj$$inline_238$$.$capture$ == !!$listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$ && $listenerObj$$inline_238$$.$b$ == $opt_handler$$1_proxy$$inline_86$$) {
+      for ($i$$inline_236_index$$inline_214$$ = 0;$i$$inline_236_index$$inline_214$$ < $listenerArray$$inline_212_listenerMap$$inline_84$$.length;++$i$$inline_236_index$$inline_214$$) {
+        var $listenerObj$$inline_237$$ = $listenerArray$$inline_212_listenerMap$$inline_84$$[$i$$inline_236_index$$inline_214$$];
+        if (!$listenerObj$$inline_237$$.$removed$ && $listenerObj$$inline_237$$.listener == $i$$79_listener$$inline_79$$ && $listenerObj$$inline_237$$.$capture$ == !!$listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$ && $listenerObj$$inline_237$$.$b$ == $opt_handler$$1_proxy$$inline_86$$) {
           break b;
         }
       }
-      $i$$inline_237_index$$inline_215$$ = -1;
+      $i$$inline_236_index$$inline_214$$ = -1;
     }
-    -1 < $i$$inline_237_index$$inline_215$$ ? ($listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$ = $listenerArray$$inline_213_listenerMap$$inline_84$$[$i$$inline_237_index$$inline_215$$], $listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$.$callOnce$ = !1) : ($listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$ = new $goog$events$Listener$$($i$$79_listener$$inline_79$$, $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_206$$.src, $typeStr$$inline_212$$, 
-    !!$listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$, $opt_handler$$1_proxy$$inline_86$$), $listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$.$callOnce$ = !1, $listenerArray$$inline_213_listenerMap$$inline_84$$.push($listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$));
-    if (!$listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$.$a$) {
+    -1 < $i$$inline_236_index$$inline_214$$ ? ($listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$ = $listenerArray$$inline_212_listenerMap$$inline_84$$[$i$$inline_236_index$$inline_214$$], $listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$.$callOnce$ = !1) : ($listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$ = new $goog$events$Listener$$($i$$79_listener$$inline_79$$, $JSCompiler_StaticMethods_goog_events_ListenerMap_prototype$add$self$$inline_205$$.src, $typeStr$$inline_211$$, 
+    !!$listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$, $opt_handler$$1_proxy$$inline_86$$), $listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$.$callOnce$ = !1, $listenerArray$$inline_212_listenerMap$$inline_84$$.push($listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$));
+    if (!$listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$.$a$) {
       $opt_handler$$1_proxy$$inline_86$$ = $goog$events$getProxy$$();
-      $listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$.$a$ = $opt_handler$$1_proxy$$inline_86$$;
+      $listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$.$a$ = $opt_handler$$1_proxy$$inline_86$$;
       $opt_handler$$1_proxy$$inline_86$$.src = $JSCompiler_temp$$8_src$$15$$;
-      $opt_handler$$1_proxy$$inline_86$$.listener = $listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$;
+      $opt_handler$$1_proxy$$inline_86$$.listener = $listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$;
       if ($JSCompiler_temp$$8_src$$15$$.addEventListener) {
         $JSCompiler_temp$$8_src$$15$$.addEventListener($type$$102$$.toString(), $opt_handler$$1_proxy$$inline_86$$, $capture$$inline_83_listener$$48$$);
       } else {
@@ -565,7 +565,7 @@ function $goog$events$listen$$($JSCompiler_temp$$8_src$$15$$, $type$$102$$, $cap
       }
       $goog$events$listenerCountEstimate_$$++;
     }
-    $JSCompiler_temp$$8_src$$15$$ = $listenerObj$$inline_214_listenerObj$$inline_85_opt_capt$$;
+    $JSCompiler_temp$$8_src$$15$$ = $listenerObj$$inline_213_listenerObj$$inline_85_opt_capt$$;
   }
   return $JSCompiler_temp$$8_src$$15$$;
 }
@@ -758,32 +758,42 @@ $JSCompiler_prototypeAlias$$.$stopPropagationOnTouchEnd_$ = !1;
 $JSCompiler_prototypeAlias$$.$queuedTransitionStage_$ = -1;
 function $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$, $aEnabled$$) {
   $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$o$ != $aEnabled$$ && (($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$o$ = $aEnabled$$) ? ($rflect$ui$MomentumScroller$instancesCount_$$++, $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$m$ = $goog$style$evaluateWithTemporaryDisplay_$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$a$), $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$s$ = 
-  $goog$style$evaluateWithTemporaryDisplay_$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$i$), $JSCompiler_StaticMethods_enterDocument$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$), $JSCompiler_StaticMethods_animateTo$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$, 0)) : ($rflect$ui$MomentumScroller$instancesCount_$$--, 0 > $rflect$ui$MomentumScroller$instancesCount_$$ && ($rflect$ui$MomentumScroller$instancesCount_$$ = 
-  0), $JSCompiler_StaticMethods_goog_events_EventHandler_prototype$removeAll$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$), $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$a$ = null, $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$i$ = null, $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$startTouchY$ = 0, $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$contentOffsetY$ = 
-  0, $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$contentStartOffsetY$ = 0));
+  $goog$style$evaluateWithTemporaryDisplay_$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$i$), $JSCompiler_StaticMethods_enterDocument$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$), $JSCompiler_StaticMethods_animateWithinBounds$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$, $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$contentOffsetY$)) : ($rflect$ui$MomentumScroller$instancesCount_$$--, 
+  0 > $rflect$ui$MomentumScroller$instancesCount_$$ && ($rflect$ui$MomentumScroller$instancesCount_$$ = 0), $JSCompiler_StaticMethods_goog_events_EventHandler_prototype$removeAll$$($JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$), $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$a$ = null, $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$self$$.$i$ = null));
 }
-$JSCompiler_prototypeAlias$$.$rflect_ui_MomentumScroller_prototype$add$ = function $$JSCompiler_prototypeAlias$$$$rflect_ui_MomentumScroller_prototype$add$$($JSCompiler_temp$$183_aElement$$5_node$$inline_217$$) {
-  this.$i$ = $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$;
-  if (void 0 !== $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$.firstElementChild) {
-    $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$ = $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$.firstElementChild;
+$JSCompiler_prototypeAlias$$.$rflect_ui_MomentumScroller_prototype$add$ = function $$JSCompiler_prototypeAlias$$$$rflect_ui_MomentumScroller_prototype$add$$($JSCompiler_temp$$182_aElement$$5_node$$inline_216$$) {
+  this.$i$ = $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$;
+  if (void 0 !== $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$.firstElementChild) {
+    $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$ = $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$.firstElementChild;
   } else {
-    for ($JSCompiler_temp$$183_aElement$$5_node$$inline_217$$ = $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$.firstChild;$JSCompiler_temp$$183_aElement$$5_node$$inline_217$$ && 1 != $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$.nodeType;) {
-      $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$ = $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$.nextSibling;
+    for ($JSCompiler_temp$$182_aElement$$5_node$$inline_216$$ = $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$.firstChild;$JSCompiler_temp$$182_aElement$$5_node$$inline_216$$ && 1 != $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$.nodeType;) {
+      $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$ = $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$.nextSibling;
     }
   }
-  this.$a$ = $JSCompiler_temp$$183_aElement$$5_node$$inline_217$$;
+  this.$a$ = $JSCompiler_temp$$182_aElement$$5_node$$inline_216$$;
   $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$$(this, !0);
 };
 $JSCompiler_prototypeAlias$$.$rflect_ui_MomentumScroller_prototype$remove$ = function $$JSCompiler_prototypeAlias$$$$rflect_ui_MomentumScroller_prototype$remove$$() {
   $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$$(this, !1);
 };
-$JSCompiler_prototypeAlias$$.$rflect_ui_MomentumScroller_prototype$reset$ = function $$JSCompiler_prototypeAlias$$$$rflect_ui_MomentumScroller_prototype$reset$$($aElement$$6_lowestContentPosition$$inline_156$$) {
+$JSCompiler_prototypeAlias$$.$rflect_ui_MomentumScroller_prototype$reset$ = function $$JSCompiler_prototypeAlias$$$$rflect_ui_MomentumScroller_prototype$reset$$($aElement$$6$$) {
   this.$rflect_ui_MomentumScroller_prototype$remove$();
-  this.$rflect_ui_MomentumScroller_prototype$add$($aElement$$6_lowestContentPosition$$inline_156$$);
-  $aElement$$6_lowestContentPosition$$inline_156$$ = $JSCompiler_StaticMethods_getLowestContentPosition$$(this);
-  var $offsetY$$inline_157$$ = 0;
-  0 < $offsetY$$inline_157$$ ? $offsetY$$inline_157$$ = 0 : $offsetY$$inline_157$$ < $aElement$$6_lowestContentPosition$$inline_156$$ && ($offsetY$$inline_157$$ = $aElement$$6_lowestContentPosition$$inline_156$$);
-  $JSCompiler_StaticMethods_animateTo$$(this, $offsetY$$inline_157$$);
+  this.$contentStartOffsetY$ = this.$contentOffsetY$ = this.$startTouchY$ = 0;
+  this.$rflect_ui_MomentumScroller_prototype$add$($aElement$$6$$);
+};
+$JSCompiler_prototypeAlias$$.$suspend$ = function $$JSCompiler_prototypeAlias$$$$suspend$$() {
+  this.$rflect_ui_MomentumScroller_prototype$remove$();
+};
+$JSCompiler_prototypeAlias$$.$resume$ = function $$JSCompiler_prototypeAlias$$$$resume$$($aElement$$7$$) {
+  console.log("Resuming to this.contentOffsetY: ", this.$contentOffsetY$);
+  this.$rflect_ui_MomentumScroller_prototype$add$($aElement$$7$$);
+  $JSCompiler_StaticMethods_animateWithinBounds$$(this, this.$contentOffsetY$);
+};
+$JSCompiler_prototypeAlias$$.$getScrollTop$ = function $$JSCompiler_prototypeAlias$$$$getScrollTop$$() {
+  return isNaN(this.$contentOffsetY$) || 0 == this.$contentOffsetY$ ? 0 : -this.$contentOffsetY$;
+};
+$JSCompiler_prototypeAlias$$.$setScrollTop$ = function $$JSCompiler_prototypeAlias$$$$setScrollTop$$($aScrollTop$$) {
+  $JSCompiler_StaticMethods_animateWithinBounds$$(this, isNaN($aScrollTop$$) || 0 == $aScrollTop$$ ? 0 : -$aScrollTop$$);
 };
 function $JSCompiler_StaticMethods_enterDocument$$($JSCompiler_StaticMethods_enterDocument$self$$) {
   $JSCompiler_StaticMethods_enterDocument$self$$.$b$($JSCompiler_StaticMethods_enterDocument$self$$.$i$, "touchstart", function($aEvent$$) {
@@ -797,11 +807,11 @@ function $JSCompiler_StaticMethods_enterDocument$$($JSCompiler_StaticMethods_ent
 $JSCompiler_prototypeAlias$$.$onTouchStart$ = function $$JSCompiler_prototypeAlias$$$$onTouchStart$$($aEvent$$2$$) {
   console.log("onTouchStart");
   if (this.$isDecelerating_$) {
-    var $aComputedStyle$$inline_219_matrix$$inline_161$$;
-    $aComputedStyle$$inline_219_matrix$$inline_161$$ = document.defaultView.getComputedStyle(this.$a$, null)[$rflect$browser$css$findAndCacheProperty_$$("transform")[1]];
-    $aComputedStyle$$inline_219_matrix$$inline_161$$ = window.WebKitCSSMatrix ? new WebKitCSSMatrix($aComputedStyle$$inline_219_matrix$$inline_161$$) : window.MSCSSMatrix ? new MSCSSMatrix($aComputedStyle$$inline_219_matrix$$inline_161$$) : window.CSSMatrix ? new CSSMatrix($aComputedStyle$$inline_219_matrix$$inline_161$$) : null;
+    var $aComputedStyle$$inline_218_matrix$$inline_158$$;
+    $aComputedStyle$$inline_218_matrix$$inline_158$$ = document.defaultView.getComputedStyle(this.$a$, null)[$rflect$browser$css$findAndCacheProperty_$$("transform")[1]];
+    $aComputedStyle$$inline_218_matrix$$inline_158$$ = window.WebKitCSSMatrix ? new WebKitCSSMatrix($aComputedStyle$$inline_218_matrix$$inline_158$$) : window.MSCSSMatrix ? new MSCSSMatrix($aComputedStyle$$inline_218_matrix$$inline_158$$) : window.CSSMatrix ? new CSSMatrix($aComputedStyle$$inline_218_matrix$$inline_158$$) : null;
     $rflect$browser$css$setTransition$$(this.$a$, "");
-    $JSCompiler_StaticMethods_animateTo$$(this, $aComputedStyle$$inline_219_matrix$$inline_161$$.m42);
+    $JSCompiler_StaticMethods_animateTo$$(this, $aComputedStyle$$inline_218_matrix$$inline_158$$.m42);
     this.$queuedTransitionStage_$ = -1;
     this.$stopPropagationOnTouchEnd_$ = !0;
   } else {
@@ -833,45 +843,45 @@ $JSCompiler_prototypeAlias$$.$onTouchMove$ = function $$JSCompiler_prototypeAlia
     $JSCompiler_StaticMethods_animateTo$$(this, $deltaY_newY$$);
   }
 };
-$JSCompiler_prototypeAlias$$.$onTouchEnd$ = function $$JSCompiler_prototypeAlias$$$$onTouchEnd$$($aEvent$$4_evt$$inline_172_length$$inline_229$$) {
+$JSCompiler_prototypeAlias$$.$onTouchEnd$ = function $$JSCompiler_prototypeAlias$$$$onTouchEnd$$($aEvent$$4_evt$$inline_169_length$$inline_228$$) {
   console.log("onTouchEnd");
   if (this.$isDragging_$ || (this.$isDragging_$ = 5 <= Math.abs(this.$currentPoint_$ - this.$startTouchY$))) {
     if ($JSCompiler_StaticMethods_positionIsOutOfBounds$$(this, this.$contentOffsetY$)) {
       $JSCompiler_StaticMethods_snapToBounds$$(this);
     } else {
-      var $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ = $JSCompiler_StaticMethods_getEndVelocity$$(this);
-      console.log("velocity", $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$);
-      if (0 != $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$) {
-        var $acceleration$$inline_165_displacement$$inline_224$$ = 0 > $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ ? 5E-4 : -5E-4, $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = -$aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ / $acceleration$$inline_165_displacement$$inline_224$$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ = 
-        this.$contentOffsetY$ + -($aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ * $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$) / (2 * $acceleration$$inline_165_displacement$$inline_224$$);
-        $JSCompiler_StaticMethods_positionIsOutOfBounds$$(this, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$) ? (console.log("stage1"), $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = $JSCompiler_StaticMethods_getEndVelocity$$(this), $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ = 0 > $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ ? 
-        5E-4 : -5E-4, 0 < $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ ? ($acceleration$$inline_165_displacement$$inline_224$$ = -this.$contentOffsetY$, this.$contentOffsetY$ = 0) : ($acceleration$$inline_165_displacement$$inline_224$$ = $JSCompiler_StaticMethods_getLowestContentPosition$$(this) - this.$contentOffsetY$, this.$contentOffsetY$ = $JSCompiler_StaticMethods_getLowestContentPosition$$(this)), console.log("displacement", 
-        $acceleration$$inline_165_displacement$$inline_224$$), this.$f$ = (0 > $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ ? -1 : 1) * Math.sqrt($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ * $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ + 2 * $acceleration$$inline_165_displacement$$inline_224$$ * 
-        $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$), console.log("this.endMomentumVelocity_", this.$f$), $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ = Math.abs(($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ - this.$f$) / $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$), 
-        $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = .33 * Math.abs(this.$f$ / $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$), $rflect$browser$css$setTransition$$(this.$a$, $rflect$browser$css$getSelectorCasedProperty$$() + " " + $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ + "ms cubic-bezier(.33," + 
-        (.66 - $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$) + ",.66," + (1 - $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$) + ")"), $rflect$browser$css$setTransform$$(this.$a$, "translate3d(0, " + this.$contentOffsetY$ + "px, 0)"), this.$queuedTransitionStage_$ = 0) : ($rflect$browser$css$setTransition$$(this.$a$, $rflect$browser$css$getSelectorCasedProperty$$() + 
-        " " + $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ + "ms cubic-bezier(0.33, 0.66, 0.66, 1)"), this.$contentOffsetY$ = $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$, $rflect$browser$css$setTransform$$(this.$a$, "translate3d(0, " + $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ + "px, 0)"));
+      var $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ = $JSCompiler_StaticMethods_getEndVelocity$$(this);
+      console.log("velocity", $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$);
+      if (0 != $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$) {
+        var $acceleration$$inline_162_displacement$$inline_223$$ = 0 > $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ ? 5E-4 : -5E-4, $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ = -$aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ / $acceleration$$inline_162_displacement$$inline_223$$, $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ = 
+        this.$contentOffsetY$ + -($aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ * $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$) / (2 * $acceleration$$inline_162_displacement$$inline_223$$);
+        $JSCompiler_StaticMethods_positionIsOutOfBounds$$(this, $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$) ? (console.log("stage1"), $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ = $JSCompiler_StaticMethods_getEndVelocity$$(this), $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ = 0 > $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ ? 
+        5E-4 : -5E-4, 0 < $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ ? ($acceleration$$inline_162_displacement$$inline_223$$ = -this.$contentOffsetY$, this.$contentOffsetY$ = 0) : ($acceleration$$inline_162_displacement$$inline_223$$ = $JSCompiler_StaticMethods_getLowestContentPosition$$(this) - this.$contentOffsetY$, this.$contentOffsetY$ = $JSCompiler_StaticMethods_getLowestContentPosition$$(this)), console.log("displacement", 
+        $acceleration$$inline_162_displacement$$inline_223$$), this.$f$ = (0 > $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ ? -1 : 1) * Math.sqrt($aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ * $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ + 2 * $acceleration$$inline_162_displacement$$inline_223$$ * 
+        $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$), console.log("this.endMomentumVelocity_", this.$f$), $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ = Math.abs(($aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ - this.$f$) / $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$), 
+        $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ = .33 * Math.abs(this.$f$ / $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$), $rflect$browser$css$setTransition$$(this.$a$, $rflect$browser$css$getSelectorCasedProperty$$() + " " + $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ + "ms cubic-bezier(.33," + 
+        (.66 - $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$) + ",.66," + (1 - $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$) + ")"), $rflect$browser$css$setTransform$$(this.$a$, "translate3d(0, " + this.$contentOffsetY$ + "px, 0)"), this.$queuedTransitionStage_$ = 0) : ($rflect$browser$css$setTransition$$(this.$a$, $rflect$browser$css$getSelectorCasedProperty$$() + 
+        " " + $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ + "ms cubic-bezier(0.33, 0.66, 0.66, 1)"), this.$contentOffsetY$ = $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$, $rflect$browser$css$setTransform$$(this.$a$, "translate3d(0, " + $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ + "px, 0)"));
         this.$isDecelerating_$ = !0;
       }
     }
   }
-  this.$stopPropagationOnTouchEnd_$ || 5 <= Math.abs(this.$currentPoint_$ - this.$startTouchY$) ? (console.log("aEvent touch end: ", $aEvent$$4_evt$$inline_172_length$$inline_229$$), $aEvent$$4_evt$$inline_172_length$$inline_229$$.$c$ ? $aEvent$$4_evt$$inline_172_length$$inline_229$$.$c$() : $aEvent$$4_evt$$inline_172_length$$inline_229$$.$a$.stopPropagation(), $aEvent$$4_evt$$inline_172_length$$inline_229$$.preventDefault(), this.$stopPropagationOnTouchEnd_$ = !1) : ($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = 
-  this.$j$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$ = this.$startTouchY$, $aEvent$$4_evt$$inline_172_length$$inline_229$$ = document.createEvent("MouseEvents"), $aEvent$$4_evt$$inline_172_length$$inline_229$$.initMouseEvent("click", !0, !1, window, 0, 0, 0, $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$, 
-  !1, !1, !1, !1, 0, null), $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$ = document.elementFromPoint($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$, $aClientY$$inline_171_acceleration$$inline_223_newY$$inline_167_time$$inline_225_velocity$$inline_164$$), $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.dispatchEvent($aEvent$$4_evt$$inline_172_length$$inline_229$$), 
-  $rflect$ui$MomentumScroller$needsFocus$$($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$) && ($aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.setSelectionRange && 0 !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type.indexOf("date") && "time" !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type && 
-  "month" !== $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.type ? ($aEvent$$4_evt$$inline_172_length$$inline_229$$ = $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.value.length, $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.setSelectionRange($aEvent$$4_evt$$inline_172_length$$inline_229$$, 
-  $aEvent$$4_evt$$inline_172_length$$inline_229$$)) : $aClientX$$inline_170_element$$inline_173_time$$inline_166_valueToLowerCubicBezierWith$$inline_226_velocity$$inline_222$$.focus()));
+  this.$stopPropagationOnTouchEnd_$ || 5 <= Math.abs(this.$currentPoint_$ - this.$startTouchY$) ? (console.log("aEvent touch end: ", $aEvent$$4_evt$$inline_169_length$$inline_228$$), $aEvent$$4_evt$$inline_169_length$$inline_228$$.$c$ ? $aEvent$$4_evt$$inline_169_length$$inline_228$$.$c$() : $aEvent$$4_evt$$inline_169_length$$inline_228$$.$a$.stopPropagation(), $aEvent$$4_evt$$inline_169_length$$inline_228$$.preventDefault(), this.$stopPropagationOnTouchEnd_$ = !1) : ($aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ = 
+  this.$j$, $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$ = this.$startTouchY$, $aEvent$$4_evt$$inline_169_length$$inline_228$$ = document.createEvent("MouseEvents"), $aEvent$$4_evt$$inline_169_length$$inline_228$$.initMouseEvent("click", !0, !1, window, 0, 0, 0, $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$, $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$, 
+  !1, !1, !1, !1, 0, null), $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$ = document.elementFromPoint($aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$, $aClientY$$inline_168_acceleration$$inline_222_newY$$inline_164_time$$inline_224_velocity$$inline_161$$), $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$.dispatchEvent($aEvent$$4_evt$$inline_169_length$$inline_228$$), 
+  $rflect$ui$MomentumScroller$needsFocus$$($aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$) && ($aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$.setSelectionRange && 0 !== $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$.type.indexOf("date") && "time" !== $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$.type && 
+  "month" !== $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$.type ? ($aEvent$$4_evt$$inline_169_length$$inline_228$$ = $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$.value.length, $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$.setSelectionRange($aEvent$$4_evt$$inline_169_length$$inline_228$$, 
+  $aEvent$$4_evt$$inline_169_length$$inline_228$$)) : $aClientX$$inline_167_element$$inline_170_time$$inline_163_valueToLowerCubicBezierWith$$inline_225_velocity$$inline_221$$.focus()));
   this.$j$ = this.$startTouchY$ = this.$previousPoint_$ = this.$previousMoment_$ = this.$currentPoint_$ = this.$currentMoment_$ = 0;
   this.$isDragging_$ = !1;
 };
-function $rflect$ui$MomentumScroller$needsFocus$$($aElement$$8$$) {
-  switch($aElement$$8$$.nodeName.toLowerCase()) {
+function $rflect$ui$MomentumScroller$needsFocus$$($aElement$$9$$) {
+  switch($aElement$$9$$.nodeName.toLowerCase()) {
     case "textarea":
       return !0;
     case "select":
       return !0;
     case "input":
-      switch($aElement$$8$$.type) {
+      switch($aElement$$9$$.type) {
         case "button":
         ;
         case "checkbox":
@@ -885,13 +895,13 @@ function $rflect$ui$MomentumScroller$needsFocus$$($aElement$$8$$) {
         case "submit":
           return !1;
       }
-      return !$aElement$$8$$.disabled && !$aElement$$8$$.readOnly;
+      return !$aElement$$9$$.disabled && !$aElement$$9$$.readOnly;
     default:
       return !1;
   }
 }
-$JSCompiler_prototypeAlias$$.$onTransitionEnd$ = function $$JSCompiler_prototypeAlias$$$$onTransitionEnd$$($aEvent$$5_newY$$inline_178_velocity$$inline_176$$) {
-  if ($aEvent$$5_newY$$inline_178_velocity$$inline_176$$.$f$ == this.$a$) {
+$JSCompiler_prototypeAlias$$.$onTransitionEnd$ = function $$JSCompiler_prototypeAlias$$$$onTransitionEnd$$($aEvent$$5_newY$$inline_175_velocity$$inline_173$$) {
+  if ($aEvent$$5_newY$$inline_175_velocity$$inline_173$$.$f$ == this.$a$) {
     switch(this.$queuedTransitionStage_$) {
       case -1:
         $rflect$browser$css$setTransition$$(this.$a$, "");
@@ -899,14 +909,14 @@ $JSCompiler_prototypeAlias$$.$onTransitionEnd$ = function $$JSCompiler_prototype
         break;
       case 0:
         console.log("stage2");
-        $aEvent$$5_newY$$inline_178_velocity$$inline_176$$ = this.$f$;
-        var $displacement$$inline_177$$ = -($aEvent$$5_newY$$inline_178_velocity$$inline_176$$ * $aEvent$$5_newY$$inline_178_velocity$$inline_176$$) / (20 * (0 > $aEvent$$5_newY$$inline_178_velocity$$inline_176$$ ? 5E-4 : -5E-4));
-        console.log("velocity", $aEvent$$5_newY$$inline_178_velocity$$inline_176$$);
-        100 < $displacement$$inline_177$$ && ($displacement$$inline_177$$ = 100);
-        -100 > $displacement$$inline_177$$ && ($displacement$$inline_177$$ = -100);
-        this.$contentOffsetY$ = $aEvent$$5_newY$$inline_178_velocity$$inline_176$$ = 0 < $aEvent$$5_newY$$inline_178_velocity$$inline_176$$ ? $displacement$$inline_177$$ : this.$contentOffsetY$ + $displacement$$inline_177$$;
+        $aEvent$$5_newY$$inline_175_velocity$$inline_173$$ = this.$f$;
+        var $displacement$$inline_174$$ = -($aEvent$$5_newY$$inline_175_velocity$$inline_173$$ * $aEvent$$5_newY$$inline_175_velocity$$inline_173$$) / (20 * (0 > $aEvent$$5_newY$$inline_175_velocity$$inline_173$$ ? 5E-4 : -5E-4));
+        console.log("velocity", $aEvent$$5_newY$$inline_175_velocity$$inline_173$$);
+        100 < $displacement$$inline_174$$ && ($displacement$$inline_174$$ = 100);
+        -100 > $displacement$$inline_174$$ && ($displacement$$inline_174$$ = -100);
+        this.$contentOffsetY$ = $aEvent$$5_newY$$inline_175_velocity$$inline_173$$ = 0 < $aEvent$$5_newY$$inline_175_velocity$$inline_173$$ ? $displacement$$inline_174$$ : this.$contentOffsetY$ + $displacement$$inline_174$$;
         $rflect$browser$css$setTransition$$(this.$a$, $rflect$browser$css$getSelectorCasedProperty$$() + " 100ms cubic-bezier(0.33, 0.66, 0.66, 1)");
-        $rflect$browser$css$setTransform$$(this.$a$, "translate3d(0, " + $aEvent$$5_newY$$inline_178_velocity$$inline_176$$ + "px, 0)");
+        $rflect$browser$css$setTransform$$(this.$a$, "translate3d(0, " + $aEvent$$5_newY$$inline_175_velocity$$inline_173$$ + "px, 0)");
         this.$queuedTransitionStage_$ = 1;
         break;
       case 1:
@@ -921,6 +931,11 @@ $JSCompiler_prototypeAlias$$.$onTransitionEnd$ = function $$JSCompiler_prototype
 function $JSCompiler_StaticMethods_animateTo$$($JSCompiler_StaticMethods_animateTo$self$$, $offsetY$$) {
   $JSCompiler_StaticMethods_animateTo$self$$.$contentOffsetY$ = $offsetY$$;
   $rflect$browser$css$setTransform$$($JSCompiler_StaticMethods_animateTo$self$$.$a$, "translate3d(0, " + $offsetY$$ + "px, 0)");
+}
+function $JSCompiler_StaticMethods_animateWithinBounds$$($JSCompiler_StaticMethods_animateWithinBounds$self$$, $aOffsetY$$) {
+  var $lowestContentPosition$$ = $JSCompiler_StaticMethods_getLowestContentPosition$$($JSCompiler_StaticMethods_animateWithinBounds$self$$), $offsetY$$1$$ = $aOffsetY$$;
+  0 < $offsetY$$1$$ ? $offsetY$$1$$ = 0 : $offsetY$$1$$ < $lowestContentPosition$$ && ($offsetY$$1$$ = $lowestContentPosition$$);
+  $JSCompiler_StaticMethods_animateTo$$($JSCompiler_StaticMethods_animateWithinBounds$self$$, $offsetY$$1$$);
 }
 function $JSCompiler_StaticMethods_snapToBounds$$($JSCompiler_StaticMethods_snapToBounds$self$$) {
   $rflect$browser$css$setTransition$$($JSCompiler_StaticMethods_snapToBounds$self$$.$a$, $rflect$browser$css$getSelectorCasedProperty$$() + " 500ms ease-out");
@@ -946,11 +961,16 @@ function $JSCompiler_StaticMethods_getEndVelocity$$($JSCompiler_StaticMethods_ge
 }
 $JSCompiler_prototypeAlias$$.$disposeInternal$ = function $$JSCompiler_prototypeAlias$$$$disposeInternal$$() {
   $JSCompiler_StaticMethods_rflect_ui_MomentumScroller_prototype$enable$$(this, !1);
+  this.$contentStartOffsetY$ = this.$contentOffsetY$ = this.$startTouchY$ = 0;
   $rflect$ui$MomentumScroller$$.$superClass_$.$disposeInternal$.call(this);
 };
 $goog$exportSymbol$$("MomentumScroller", $rflect$ui$MomentumScroller$$);
 $goog$exportSymbol$$("MomentumScroller.prototype.add", $rflect$ui$MomentumScroller$$.prototype.$rflect_ui_MomentumScroller_prototype$add$);
 $goog$exportSymbol$$("MomentumScroller.prototype.remove", $rflect$ui$MomentumScroller$$.prototype.$rflect_ui_MomentumScroller_prototype$remove$);
 $goog$exportSymbol$$("MomentumScroller.prototype.reset", $rflect$ui$MomentumScroller$$.prototype.$rflect_ui_MomentumScroller_prototype$reset$);
+$goog$exportSymbol$$("MomentumScroller.prototype.suspend", $rflect$ui$MomentumScroller$$.prototype.$suspend$);
+$goog$exportSymbol$$("MomentumScroller.prototype.resume", $rflect$ui$MomentumScroller$$.prototype.$resume$);
+$goog$exportSymbol$$("MomentumScroller.prototype.getScrollTop", $rflect$ui$MomentumScroller$$.prototype.$getScrollTop$);
+$goog$exportSymbol$$("MomentumScroller.prototype.setScrollTop", $rflect$ui$MomentumScroller$$.prototype.$setScrollTop$);
 $goog$exportSymbol$$("MomentumScroller.prototype.dispose", $rflect$ui$MomentumScroller$$.prototype.$l$);
 })();

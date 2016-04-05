@@ -80,8 +80,8 @@
         momentumScroller.dispose();
       }, false);
       window.addEventListener('resize', function() {
-        console.log('Resize event fired.');
-        momentumScroller.reset(document.querySelector('.scrollable'));
+        momentumScroller.suspend();
+        momentumScroller.resume(document.querySelector('.scrollable'));
       }, false);
     </script>
   </body>
