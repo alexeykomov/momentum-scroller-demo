@@ -1,14 +1,14 @@
 {
   "name": "momentum-scroller-demo",
-  "version": "0.2.2",
+  "version": "0.3.2",
   "description": "demo site for momentum scroller project",
   "main": "",
   "directories": {},
   "private": false,
   "scripts": {
+    "install": "jade -P index.jade -O \"{installing: true}\" & lessc --clean-css less/all.less css/all.css",
     "start": "python -m SimpleHTTPServer",
-    "build": "jade -P index.jade & lessc --clean-css less/all.less css/all.css",
-    "build-from-npm": "jade -P index.jade & lessc --clean-css less/all.less css/all.css & cp ./node_modules/momentum-scroller/build/momentum-scroller.js ./js/momentum-scroller.js"
+    "build": "jade -P index.jade & lessc --clean-css less/all.less css/all.css"
   },
   "keywords": [
     "demo",
