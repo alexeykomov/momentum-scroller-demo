@@ -20,6 +20,6 @@
   "license": "commercial",
   "devDependencies": {},
   "dependencies": {
-    "momentum-scroller": "^0.2.3"
+    "momentum-scroller": "^1.0.0"
   }
 }
