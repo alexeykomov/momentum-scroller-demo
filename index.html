@@ -72,17 +72,19 @@
     </main>
     <script src="js/momentum-scroller.js"></script>
     <script>
-      var momentumScroller = new MomentumScroller();
-      window.addEventListener('load', function() {
-        momentumScroller.add(document.querySelector('.scrollable'));
-      }, false);
-      window.addEventListener('unload', function() {
-        momentumScroller.dispose();
-      }, false);
-      window.addEventListener('resize', function() {
-        momentumScroller.remove();
-        momentumScroller.add(document.querySelector('.scrollable'));
-      }, false);
+      if ('ontouchstart' in window) {
+        var momentumScroller = new MomentumScroller();
+        window.addEventListener('load', function() {
+          momentumScroller.add(document.querySelector('.scrollable'));
+        }, false);
+        window.addEventListener('unload', function() {
+          momentumScroller.dispose();
+        }, false);
+        window.addEventListener('resize', function() {
+          momentumScroller.remove();
+          momentumScroller.add(document.querySelector('.scrollable'));
+        }, false);
+      }
     </script>
   </body>
 </html>
