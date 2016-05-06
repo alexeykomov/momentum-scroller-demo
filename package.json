@@ -1,6 +1,6 @@
 {
   "name": "momentum-scroller-demo",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "demo site for momentum scroller project",
   "main": "",
   "directories": {},
@@ -17,7 +17,7 @@
   "author": [
     "alexeykcontact@gmail.com (Alex K)"
   ],
-  "license": "commercial",
+  "license": "MIT",
   "devDependencies": {},
   "dependencies": {
     "momentum-scroller": "^1.0.0"
